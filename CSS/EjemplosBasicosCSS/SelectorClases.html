@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--autor: Carolina Ruescas-->
+	<head>
+		<meta charset="UTF-8">
+		<title>En línea</title>
+		<!-- CSS externo -->
+	
+		<style>
+			/*comentario Css*/
+			h1{
+				text-align: center;
+			}
+			p#introduccion{border: dashed palevioletred; 
+							background-color: pink;
+			} /*en lugar de utilizar los slectores de clase, cuando solo queremos añadir 
+			las propiedades a un titulo utilizamos id con el # dentor del style*/
+
+			p.pregunta{ border:solid blue; 
+						background-color: aqua;
+			}
+
+			p.respuesta{ color: brown;
+			}
+			
+			p#conclusion{border-style:double;
+						background-color: purple;
+						border-width: 30px;
+						padding: 20px;
+						color: white;
+						text-align: center;
+						font-weight: bold;
+						text-transform: uppercase;
+			}			
+		</style>
+	</head>
+	<body>
+		<!-- Primera clase sobre selectores de clase-->
+        <h1>SELECTORES DE CLASE</h1>
+		<p id="introduccion">
+			INTRODUCCIÓN
+		</p>
+		<p class="pregunta">
+			¿Pregunta 1?
+		</p>
+		<p class="respuesta">
+			RESPUESTA 1:
+		</p>
+		<p class="pregunta">
+			¿Pregunta 2?
+		</p>
+		<p class="respuesta">
+			RESPUESTA 2:
+		</p>
+		<p class="pregunta">
+			¿Pregunta 3?
+		</p>
+		<p class="respuesta">
+			RESPUESTA 3:
+		</p>
+		<p class="pregunta">
+			¿Pregunta 4?
+		</p>
+		<p class="respuesta">
+			RESPUESTA 4:
+		</p>
+		<p id="conclusion">
+			Conclusión
+		</p>
+	</body>
+</html>
