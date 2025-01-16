@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--autor: Carolina Ruescas-->
+	<head>
+		<meta charset="UTF-8">
+		<title>TITULO</title>
+		<style>
+            #colapsada{
+                    border-collapse: collapse;
+                    border-spacing: 10px;
+                    border: red 5px dotted;
+                    background-color: #FDD;
+                    padding: 15px;
+            }
+            td, th{
+                    border: 10px solid navy;
+                    padding: 10px;
+                    background-color: #DDF;
+            }
+        
+            #separada{
+                    border-collapse: separate;
+                    border-spacing: 10px;
+                    border: red 5px dotted;
+                    background-color: #FDD;
+                    padding: 15px;
+            }
+		</style>
+	</head>
+	<body>
+		<!-- Practicando border-collapse -->
+         <table id="colapsada">
+            <caption>border-collapse: collapse</caption>
+            <tr>
+                <th>Cabecera-1</th>
+                <th>Cabecera-2</th>
+                <th>Cabecera-3</th>
+            </tr>
+            <tr>
+                <td>fila 1 - celda 1</td>
+                <td>fila 1 - celda 2</td>
+                <td>fila 1 - celda 3</td>
+            </tr>
+            <tr>
+                <td>fila 2 - celda 1</td>
+                <td>fila 2 - celda 2</td>
+                <td>fila 2 - celda 3</td>
+            </tr>
+         </table>
+         <br><br>
+         <table id="separada">
+            <caption>border-separate: separate</caption>
+            <tr>
+                <th>Cabecera-1</th>
+                <th>Cabecera-2</th>
+                <th>Cabecera-3</th>
+            </tr>
+            <tr>
+                <td>fila 1 - celda 1</td>
+                <td>fila 1 - celda 2</td>
+                <td>fila 1 - celda 3</td>
+            </tr>
+            <tr>
+                <td>fila 2 - celda 1</td>
+                <td>fila 2 - celda 2</td>
+                <td>fila 2 - celda 3</td>
+            </tr>
+         </table>
+	</body>
+</html>
