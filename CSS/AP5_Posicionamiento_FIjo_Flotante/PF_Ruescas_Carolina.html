@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--autor: Carolina Ruescas-->
+	<head>
+		<meta charset="UTF-8">
+		<title>POSICIONAMIENTO 5</title>
+		<style>
+			/*comentario Css*/
+            #fijo_derecha {
+                right: 10%;
+            }
+            
+            #fijo_izquierda{
+                left: 10%;
+            }
+            #fijo_izquierda, #fijo_derecha{
+                position: fixed;
+                border: #FF0000 5px double;
+                height: 100px;
+                width: 120px;
+                top: 50px;
+            }
+
+            div{
+                width: 50%;
+                margin: auto;
+            }
+            .azul {
+                background-color: #6699FF;
+            }
+            .verde{
+                background-color: #66CC99;
+            }
+
+            .azul,.verde{
+                display: block;
+                height: 500px;
+                border: #006666 dashed;
+                border-width: 0px 5px 5px 5px
+            }
+		</style>
+	</head>
+	<body>
+		<!-- Práctica de posicionamiento fijo-->
+         <p id="fijo_izquierda"> Posicionamiento<br>fijo<br>Izquierda<br></p>
+         <div>
+            <span class="azul">1</span>
+            <span class="verde">2</span>
+            <span class="azul">3</span>
+            <span class="verde">4</span>
+         </div>
+         <p id="fijo_derecha"> Posicionamiento<br>fijo<br>Derecha</p>
+	</body>
+</html>
