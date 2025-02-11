@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+             <style>
+                    * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+
+            header {
+                background: #333;
+                color: #fff;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            header .logo h1 {
+                margin: 0;
+            }
+
+            header nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            header nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            header nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px;
+            }
+
+            main {
+                flex: 3;
+            }
+
+            .post {
+                background-color: #fff;
+                margin-bottom: 20px;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .post-title {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+
+            .post-meta {
+                font-size: 0.9rem;
+                color: #777;
+                margin-bottom: 15px;
+            }
+
+            .post-content {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+
+            .read-more {
+                color: #333;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .read-more:hover {
+                color: #007bff;
+            }
+
+            aside {
+                flex: 1;
+                margin-left: 20px;
+            }
+
+            .sidebar {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .sidebar h3 {
+                margin-bottom: 10px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background: #333;
+                color: #fff;
+                margin-top: 20px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mi Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <article class="post">
+                <h2 class="post-title">Título de la Primera Publicación</h2>
+                <p class="post-meta">Publicado el 10 de febrero de 2025</p>
+                <p class="post-content">
+                    Bienvenidos a mi primer post en este blog. Aquí compartiré mis pensamientos, ideas y mucho más. ¡Espero que disfruten!
+                </p>
+                <a href="#" class="read-more">Leer más...</a>
+            </article>
+
+            <article class="post">
+                <h2 class="post-title">Segunda Publicación del Blog</h2>
+                <p class="post-meta">Publicado el 9 de febrero de 2025</p>
+                <p class="post-content">
+                    Hoy quiero hablar sobre algo interesante. La tecnología está avanzando a pasos agigantados y el futuro nunca se vio tan prometedor.
+                </p>
+                <a href="#" class="read-more">Leer más...</a>
+            </article>
+        </main>
+
+        <aside>
+            <section class="sidebar">
+                <h3>Acerca de mí</h3>
+                <p>Hola, soy un apasionado de la tecnología y el desarrollo web. En este blog comparto mis experiencias y conocimientos.</p>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

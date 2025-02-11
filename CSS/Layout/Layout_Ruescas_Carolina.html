@@ -7,10 +7,16 @@
         <style>
             * {
                 box-sizing: border-box;
+                margin: 0;
+                padding: 0;
             }
+            
 
             body {
                 font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                color: #333;
             }
 
             /* Style the header */
@@ -20,23 +26,39 @@
                 text-align: center;
                 font-size: 35px;
                 color: white;
+                
+            }
+            header .logo h2 {
+                margin: 0;
             }
 
-            /* Create two columns/boxes that floats next to each other */
-            nav {
-                float: left;
-                width: 30%;
-                height: 300px; /* only for demonstration, should be removed */
-                background: #77c9c2;
-                padding: 20px;
-            }
-
-            /* Style the list inside the menu */
-            nav ul {
+            header nav ul {
                 list-style-type: none;
                 padding: 0;
             }
 
+            header nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            header nav ul li a {
+                background-color: #02e8c2;
+                padding: 10px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+                
+            }
+            header nav ul li a:hover {
+                color: #ee00ff;
+                background-color: #ffffff;
+            }
+
+            /* Style the list inside the menu */
+            
             article {
                 float: left;
                 padding: 20px;
@@ -50,6 +72,53 @@
                 content: "";
                 display: table;
                 clear: both;
+            }
+            main {
+                 flex:2.5;
+            }
+            .container {
+                display: flex;
+                justify-content: space-between;
+                margin: 60px;
+            }
+
+
+            .post {
+                background-color: #fff;
+                margin-bottom: 20px;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .post-title {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            .post-meta {
+                font-size: 14px;
+                color: #777;
+                margin-bottom: 15px;
+            }
+
+            .post-content {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .read-more {
+                color: #a941ee;
+                font-weight: bold;
+            }
+
+            .read-more:hover {
+                color: rgb(11, 134, 143);
+            }
+
+            aside {
+                flex: 1;
+                margin-left: 20px;
             }
 
             /* Style the footer */
@@ -67,29 +136,77 @@
                 height: auto;
                 }
             }
+            .sidebar {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .sidebar h3 {
+                margin-bottom: 10px;
+            }
+         
+
+            
         </style>
     </head>
     <body>
         <header>
-            <h2>Cities</h2>
-        </header>
-
-        <section>
-            <nav>
-                 <ul>
-                      <li><a href="#">London</a></li>
-                      <li><a href="#">Paris</a></li>
-                      <li><a href="#">Tokyo</a></li>
+            <div class="logo">
+              <h2>Mi Blog</h2>
+              <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-            <article>
-                <h1>London</h1>
-                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-             </article>
+            </div>
+        
+        </header>
+    
+                <main>
+                    <div class="container">
+                    <article class="post">
+                        <h2 class="post-title">Título de la Primera Publicación</h2>
+                        <p class="post-meta">Publicado en febrero de 2025</p>
+                        <p class="post-content">
+                            Bienvenidos a mi primer post en este blog. Aquí compartiré mis pensamientos, ideas y mucho más. ¡Espero que disfruten!
+                        </p>
+                        <a href="#" class="read-more">Leer más...</a>
+                    </article>
+        
+                    <article class="post">
+                        <h2 class="post-title">Segunda Publicación del Blog</h2>
+                        <p class="post-meta">Publicado en febrero de 2025</p>
+                        <p class="post-content">
+                            Hoy quiero hablar sobre algo interesante. La tecnología está avanzando a pasos agigantados y el futuro nunca se vio tan prometedor.
+                        </p>
+                        <a href="#" class="read-more">Leer más...</a>
+                    </article>
+                    <aside>
+                        <section class="sidebar">
+                            <h3>Acerca de mí</h3>
+                            <p>Hola, soy una apasionada del arte y de la capacidad de uno mismo para aprender de forma autodidacta</p>
+                        </section>
+                    </aside>
+                </div>
+
+                </main>
+    
+
+        <section>
+                <article>
+                    <h2>London</h2>
+                    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                 </article>
         </section>
+        
         <footer>
             <p>Footer</p>
+
         </footer>
     </body>
 </html>
